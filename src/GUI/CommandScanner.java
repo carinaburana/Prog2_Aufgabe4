@@ -15,8 +15,8 @@ public class CommandScanner {
     public Command next() throws ScanException{
 
         try {
-            //String tmp = inputReader.readLine();
-            String tmp = "spawnmini 14";
+            String tmp = inputReader.readLine();
+            //String tmp = "spawnmini 14";
             String[] input = tmp.split(" ");
             GameCommandType commandType = null;
             for (int i = 0; i < commandTypeInfos.length; i++) {
