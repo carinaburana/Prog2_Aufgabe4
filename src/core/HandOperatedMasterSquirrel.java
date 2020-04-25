@@ -1,9 +1,4 @@
 package core;
-
-import java.io.IOException;
-
-import static core.GameCommandType.EXIT;
-
 public class HandOperatedMasterSquirrel extends MasterSquirrel {
 
 
@@ -60,7 +55,6 @@ public class HandOperatedMasterSquirrel extends MasterSquirrel {
 
             context.tryMove(this, targetLoc);
 
-            return;
 
         }
     }
