@@ -6,6 +6,9 @@ import core.GameCommandType;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+import static core.GameCommandType.EXIT;
+import static core.GameCommandType.HELP;
+
 
 public class ConsoleUI implements UI{
 
@@ -26,6 +29,13 @@ public class ConsoleUI implements UI{
         } catch (ScanException e) {
             e.printStackTrace();
             return null;
+        }
+
+        if (command.getCommandType() == HELP){
+            System.out.println("help");
+            return null;
+        } else if (command.getCommandType() == EXIT){
+            System.exit(1);
         }
 
 

@@ -41,9 +41,10 @@ public abstract class Game {
     }
 
     private void update(){
-        if (processedInput.getCommandType() != HELP && processedInput.getCommandType() != MASTER_ENERGY) {
+        if (processedInput == null) {
+            return;
+        }
             state.update(processedInput);
         }
     }
 
-}
