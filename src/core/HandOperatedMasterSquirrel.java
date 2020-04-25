@@ -30,7 +30,7 @@ public class HandOperatedMasterSquirrel extends MasterSquirrel {
             }
 
 
-            XY targetLoc = getLoc();
+            XY targetLoc;
 
             switch((GameCommandType)operator.getCommandType()) {
                 case UP:
